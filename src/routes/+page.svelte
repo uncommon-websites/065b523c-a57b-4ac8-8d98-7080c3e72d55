@@ -7,16 +7,50 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+<CustomerCardHero
+  centered={true}
+  title="Autonomous operations you can trust"
+  subtitle="Trusted by mission-critical teams worldwide to sense, predict, and act in real time—across air, sea, and land."
+  customers={[
+    {
+      name: "Jessica Lee",
+      position: "Airline Operations Manager",
+      imageSrc: "/generated/image-a-female-airline-operations-manager-at-a.webp"
+    },
+    {
+      name: "Carlos Fernandez",
+      position: "Maritime Executive",
+      imageSrc: "/generated/image-a-male-maritime-executive-at-a-seaport-s.webp"
+    },
+    {
+      name: "Priya Sharma",
+      position: "Ground Logistics Supervisor",
+      imageSrc: "/generated/image-a-female-ground-logistics-supervisor-on-.webp"
+    },
+    {
+      name: "James Walker",
+      position: "Air Traffic Controller",
+      imageSrc: "/generated/image-a-male-air-traffic-controller-in-a-contr.webp"
+    },
+    {
+      name: "Emily Chen",
+      position: "Aviation Dispatcher",
+      imageSrc: "/generated/image-a-female-aviation-dispatcher-in-her-offi.webp"
+    }
+  ]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://logo.clearbit.com/delta.com',
+		'https://logo.clearbit.com/maersk.com',
+		'https://logo.clearbit.com/united.com',
+		'https://logo.clearbit.com/cosco.com'
+	]}
+/>
 
 <Summary
 	generating
