@@ -37,137 +37,129 @@ Please update features according to the company's product offering. Do not remov
 	const {
 		title = "Simple, transparent pricing",
 		subtitle = "Choose the plan that works best for your needs",
-		tierNames = ["Starter", "Pro", "Enterprise"],
+		tierNames = ["Launch", "Scale", "Mission Critical"],
 		features = [
-			{
-				name: "Projects",
-				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "Team members",
-				tiers: {
-					Starter: "1",
-					Pro: "10",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "Storage",
-				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "API access",
-				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
-				}
-			},
-			{
-				name: "Custom domains",
-				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
-				}
-			},
-			{
-				name: "Analytics",
-				tiers: {
-					Starter: "Basic",
-					Pro: "Advanced",
-					Enterprise: "Advanced"
-				}
-			},
-			{
-				name: "Support response time",
-				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
-				}
-			},
-			{
-				name: "Dedicated account manager",
-				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: true
-				}
-			},
-			{
-				name: "SLA",
-				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
-				}
-			}
-		],
+  {
+    name: "Agents included",
+    tiers: {
+      "Launch": "1 digital human",
+      "Scale": "Up to 5 agents",
+      "Mission Critical": "Unlimited, enterprise-wide"
+    }
+  },
+  {
+    name: "Domain coverage",
+    tiers: {
+      "Launch": "Choose 1 (air / land / sea)",
+      "Scale": "Any 2 domains",
+      "Mission Critical": "Full cross-domain integration"
+    }
+  },
+  {
+    name: "Live hazard monitoring",
+    tiers: {
+      "Launch": true,
+      "Scale": true,
+      "Mission Critical": "Rapid-response detection protocols"
+    }
+  },
+  {
+    name: "Predictive decision engine",
+    tiers: {
+      "Launch": "Standard library",
+      "Scale": "Multivariate risk, delay & fuel modules",
+      "Mission Critical": "Fully customizable analytics & flow controls"
+    }
+  },
+  {
+    name: "Integrations / APIs",
+    tiers: {
+      "Launch": "Web dashboard access only",
+      "Scale": "Core REST/SDK support included",
+      "Mission Critical": "Private deployment & CI/CD integration"
+    }
+  },
+  {
+    name: "Support & SLAs",
+    tiers: {
+      "Launch": "Email support only",
+      "Scale": "Priority weekday support",
+      "Mission Critical": "24/7 SLA (senior engineering)"
+    }
+  },
+  {
+    name: "Onboarding",
+    tiers: {
+      "Launch": "Self-guided materials",
+      "Scale": "Dedicated product expert",
+      "Mission Critical": "Deployment partnership & compliance enablement"
+    }
+  },
+  {
+    name: "Security & compliance",
+    tiers: {
+      "Launch": "Standard protocols",
+      "Scale": "ISO-aligned data flows",
+      "Mission Critical": "Defense & critical infra grade"
+    }
+  }
+],
 		tiers = [
-			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
-				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
-				],
-				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
-				}
-			},
-			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
-				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
-				],
-				cta: {
-					label: "Get started",
-					href: "/signup?plan=pro"
-				},
-				highlight: true
-			},
-			{
-				name: "Enterprise",
-				monthlyPrice: null,
-				yearlyPrice: null,
-				description: "For large organizations with specific needs",
-				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
-				],
-				cta: {
-					label: "Contact sales",
-					href: "/contact"
-				}
-			}
-		]
+  {
+    name: "Launch",
+    monthlyPrice: null,
+    yearlyPrice: 15000,
+    description: "For pilots, R&D, and teams piloting autonomy in a single domain. Production-grade digital human agent and standard integrations included.",
+    features: [
+      "1 digital human",
+      "Access to 1 domain",
+      "Standard sensor and data feeds",
+      "Live hazard monitoring",
+      "Email support"
+    ],
+    cta: {
+      label: "Book a demo",
+      href: "/contact?plan=launch"
+    }
+  },
+  {
+    name: "Scale",
+    monthlyPrice: null,
+    yearlyPrice: 59000,
+    description: "For expanding operations across teams and domains. Full-featured integration, SDK/API access, advanced analytics, and priority support.",
+    features: [
+      "Up to 5 agents",
+      "Any 2 domains",
+      "Real-time multivariate analytics",
+      "Core REST/SDK integration",
+      "Priority weekday support",
+      "Dedicated product expert"
+    ],
+    cta: {
+      label: "Book a demo",
+      href: "/contact?plan=scale"
+    },
+    highlight: true
+  },
+  {
+    name: "Mission Critical",
+    monthlyPrice: null,
+    yearlyPrice: null,
+    description: "Comprehensive platform deployments for large orgs or critical ops. Custom analytics, private cloud/on-premise, dedicated specialists, and 24/7 SLAs.",
+    features: [
+      "Unlimited, enterprise-wide agents",
+      "Full cross-domain integration",
+      "Private deployment & CI/CD integration",
+      "Fully customizable analytics",
+      "24/7 SLA (senior engineering)",
+      "Deployment partnership & defense-grade compliance"
+    ],
+    cta: {
+      label: "Contact sales",
+      href: "/contact?plan=mission-critical"
+    }
+  }
+]
 	}: {
 		title?: string;
 		subtitle?: string;

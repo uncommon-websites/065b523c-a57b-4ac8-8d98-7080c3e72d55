@@ -23,22 +23,22 @@
 		"bg-primary-50 text-primary-600 dark:bg-primary-950 dark:text-primary-400 flex items-center justify-center rounded-full";
 
 	const benefits = [
-		{
-			title: "Flexible Work",
-			description: "Remote-first with flexible hours that respect work-life balance.",
-			icon: IconBriefcase
-		},
-		{
-			title: "Growth Opportunities",
-			description: "Continuous learning with mentorship and education stipends.",
-			icon: IconUsers
-		},
-		{
-			title: "Comprehensive Benefits",
-			description: "Health coverage, retirement plans, and generous paid time off.",
-			icon: IconHeart
-		}
-	];
+	{
+		title: "Work at the boundary of AI and operations",
+		description: "Shape autonomous systems trusted in aviation, maritime, and beyond. See the direct impact of your work on major global operations.",
+		icon: IconBriefcase
+	},
+	{
+		title: "Grow as we grow",
+		description: "Join us at our inflection point—early team members influence how we scale, with high ownership and growth paths as the company expands.",
+		icon: IconUsers
+	},
+	{
+		title: "Compensation and real benefits",
+		description: "Competitive salary, equity for early hires, health coverage, learning stipends, and a remote-first team culture that rewards results.",
+		icon: IconHeart
+	}
+];
 
 	const openings: JobOpening[] = [
 		// Engineering
@@ -121,78 +121,85 @@
 	];
 
 	const employeeTestimonials = [
-		{
-			name: "Michael Chen",
-			position: "Senior Developer",
-			company: "Engineering Team",
-			quote:
-				"Working here has given me the opportunity to tackle challenging problems while maintaining a healthy work-life balance. The team culture is supportive and collaborative.",
-			image:
-				"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Priya Sharma",
-			position: "Product Designer",
-			company: "Design Team",
-			quote:
-				"The creative freedom and opportunity to influence product decisions makes this the best place I've ever worked. I'm constantly learning and growing.",
-			image:
-				"https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Marcus Johnson",
-			position: "Marketing Lead",
-			company: "Marketing Team",
-			quote:
-				"I joined three years ago and have grown tremendously. The leadership truly invests in your development and the work environment is both challenging and supportive.",
-			image:
-				"https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		}
-	];
+  {
+    name: "Li Chen",
+    position: "Engineering Manager",
+    company: "Decision Systems Team",
+    quote:
+      "Joining GeoSpatios has pushed me professionally in the best ways. I now lead a team building AI for live aviation systems—something I never thought I’d get to do so early. The culture is fast, focused, and incredibly respectful.",
+    image: "/generated/image-east-asian-woman-engineering-manager-smi.webp"
+  },
+  {
+    name: "Marco Valentin",
+    position: "Operations Associate",
+    company: "Transport Systems Team",
+    quote:
+      "I’ve worked at big ops firms before, but this is totally different. Here, I’m solving real problems that hit airports and ports every day. Feedback is fast. The impact is immediate. That’s what makes it exciting.",
+    image: "/generated/image-latino-male-operations-associate-dressed.webp"
+  },
+  {
+    name: "Avery Okoro",
+    position: "Product Designer",
+    company: "Core UX Team",
+    quote:
+      "Design isn’t an afterthought here. I helped shape the entire experience for how operators interact with Geo-OS in real time. The support for new ideas—especially from folks who don’t fit the typical mold—has been real and refreshing.",
+    image: "/generated/image-black-nonbinary-product-designer-looking.webp"
+  }
+];
 
 	const processSteps = [
-		{
-			step: 1,
-			title: "Apply",
-			description:
-				"Submit your application through our careers portal with your resume and portfolio."
-		},
-		{
-			step: 2,
-			title: "Interview",
-			description: "Meet with our team to discuss your experience, skills, and career aspirations."
-		},
-		{
-			step: 3,
-			title: "Welcome aboard",
-			description: "Join our team and start your journey building the future with us."
-		}
-	];
+	{
+		step: 1,
+		title: "Apply online",
+		description: "Send your resume, LinkedIn, or portfolio. If you have relevant project work, share that too."
+	},
+	{
+		step: 2,
+		title: "Intro conversation",
+		description: "If we see a fit, we’ll invite you to a quick chat so you can learn about us and we can better understand your goals and strengths."
+	},
+	{
+		step: 3,
+		title: "Technical assessment",
+		description: "Depending on the role, this may be a lightweight take-home project or a structured technical conversation focused on practical problem-solving."
+	},
+	{
+		step: 4,
+		title: "Final interviews with the team",
+		description: "Meet a few colleagues and discuss how you'd approach real challenges we’re working through today. These conversations focus on working style, priorities, and concrete problem-solving—not abstract puzzle questions."
+	},
+	{
+		step: 5,
+		title: "Offer and onboarding",
+		description: "If it’s a fit on both sides, we’ll move fast to get you started. You’ll receive clear documentation to help you hit the ground running from day one."
+	}
+];
 
 	const values = [
-		{
-			icon: IconHeart,
-			title: "Passion",
-			description: "We're driven by a shared passion for innovation and excellence."
-		},
-		{
-			icon: IconUsers,
-			title: "Collaboration",
-			description: "We believe in teamwork and collaboration to achieve great things."
-		},
-		{
-			icon: IconGlobe,
-			title: "Global Impact",
-			description: "We're committed to making a positive impact on the world."
-		}
-	];
+	{
+		icon: IconHeart,
+		title: "High ownership, low ego",
+		description: "Everyone ships. Titles come second to impact. We solve real problems in real time—together."
+	},
+	{
+		icon: IconUsers,
+		title: "Move at operational speed",
+		description: "Momentum breeds insight. We value action, iteration, and learning as we go."
+	},
+	{
+		icon: IconGlobe,
+		title: "Truth over decoration",
+		description: "Signal trumps noise. Outcomes matter more than presentation and we focus on what works in practice."
+	}
+];
 </script>
 
 <!-- Hero Section -->
 
 <SecondaryHero
-	title="Join our team of innovators"
-	subtitle="We're looking for passionate people to help us build the future of digital experiences. Discover your next opportunity with us."
+  title="Build autonomy. Shape tomorrow."
+  subtitle="Join the team powering real-world AI impact."
+  imageSrc="/generated/image-a-diverse-group-of-professionals-working.webp"
 />
 
 <!-- Why Join Us Section -->

@@ -21,11 +21,10 @@ A minimalist teaser for the about page.
 
 	// Data
 	const teamMember: TeamMember = {
-		name: "Alex Morgan",
-		role: "Founder & CEO",
-		image:
-			"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
-	};
+	name: "Zilin Dong",
+	role: "Founder & CEO",
+	image: "/generated/image-a-portrait-of-a-visionary-asian-founder-.webp"
+};
 </script>
 
 <section bind:this={sectionRef} {...props}>
@@ -33,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"We didn’t start with connections—we started with chaos. We’re obsessed with making real-time operations as intelligent as the boardroom."`}
 			/>
 
 			<!-- Team Member & CTA Section -->
