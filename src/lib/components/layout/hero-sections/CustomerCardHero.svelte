@@ -49,17 +49,17 @@ It should ALWAYS have between 3 and 5 customers!
 		animate(
 			cards,
 			{
-				// y: ["50%", 0],
-				scale: [0.9, 1],
-				filter: ["blur(4px)", "blur(0px)"],
+				y: [32, 0],
+				scale: [0.95, 1],
+				filter: ["blur(8px)", "blur(0px)"],
 				opacity: [0, 1]
 			},
 			{
-				duration: 0.5,
-				ease: "easeOut",
-				delay: stagger(0.1, {
-					startDelay: 0.5,
-					ease: "easeInOut"
+				duration: 0.8,
+				ease: [0.16, 1, 0.3, 1], // Apple's preferred easing
+				delay: stagger(0.08, {
+					startDelay: 0.3,
+					ease: "easeOut"
 				})
 			}
 		);
@@ -111,38 +111,67 @@ It should ALWAYS have between 3 and 5 customers!
 		{/if}
 	</header>
 
-	<div class="relative mt-8 px-4">
-		<!-- Desktop: Overlapping card layout -->
+	<div class="relative mt-16 px-4">
+		<!-- Desktop: Perfectly aligned grid with subtle depth -->
 		<div class="hidden lg:block">
-			<div class="relative mx-auto max-w-4xl">
-				{#each customers as customer, index}
-					<div 
-						class="absolute transition-all duration-300 hover:z-10 hover:scale-105"
-						style:left="{index * 15}%"
-						style:top="{index % 2 === 0 ? '0' : '2rem'}"
-						style:z-index="{customers.length - index}"
-					>
-						<StakeholderCard bind:cards {...customer} {index} />
-					</div>
-				{/each}
-				<!-- Spacer to maintain height -->
-				<div class="invisible">
-					<StakeholderCard {...customers[0]} index={0} />
+			<div class="mx-auto max-w-6xl">
+				<div class="grid grid-cols-5 gap-6">
+					{#each customers as customer, index}
+						<div 
+							class="group relative transition-all duration-500 ease-out hover:-translate-y-2 hover:scale-105"
+							style:animation-delay="{index * 100}ms"
+						>
+							<StakeholderCard bind:cards {...customer} {index} />
+							<!-- Subtle shadow for depth -->
+							<div class="absolute inset-0 -z-10 rounded-xl bg-black/5 blur-xl transition-all duration-500 group-hover:bg-black/10 group-hover:blur-2xl"></div>
+						</div>
+					{/each}
 				</div>
-				<div class="h-8"></div>
 			</div>
 		</div>
 
-		<!-- Mobile/Tablet: Staggered grid layout -->
-		<div class="lg:hidden">
-			<div class="grid gap-4 md:grid-cols-2">
+		<!-- Tablet: 3-2 grid layout -->
+		<div class="hidden md:block lg:hidden">
+			<div class="mx-auto max-w-4xl space-y-6">
+				<!-- First row: 3 cards -->
+				<div class="grid grid-cols-3 gap-6">
+					{#each customers.slice(0, 3) as customer, index}
+						<div 
+							class="group relative transition-all duration-500 ease-out hover:-translate-y-2 hover:scale-105"
+							style:animation-delay="{index * 100}ms"
+						>
+							<StakeholderCard bind:cards {...customer} {index} />
+							<div class="absolute inset-0 -z-10 rounded-xl bg-black/5 blur-xl transition-all duration-500 group-hover:bg-black/10 group-hover:blur-2xl"></div>
+						</div>
+					{/each}
+				</div>
+				<!-- Second row: 2 cards centered -->
+				{#if customers.length > 3}
+					<div class="grid grid-cols-2 gap-6 mx-auto max-w-md">
+						{#each customers.slice(3) as customer, index}
+							<div 
+								class="group relative transition-all duration-500 ease-out hover:-translate-y-2 hover:scale-105"
+								style:animation-delay="{(index + 3) * 100}ms"
+							>
+								<StakeholderCard bind:cards {...customer} index={index + 3} />
+								<div class="absolute inset-0 -z-10 rounded-xl bg-black/5 blur-xl transition-all duration-500 group-hover:bg-black/10 group-hover:blur-2xl"></div>
+							</div>
+						{/each}
+					</div>
+				{/if}
+			</div>
+		</div>
+
+		<!-- Mobile: Single column with perfect spacing -->
+		<div class="md:hidden">
+			<div class="mx-auto max-w-sm space-y-4">
 				{#each customers as customer, index}
 					<div 
-						class="transition-all duration-300"
-						class:md:mt-8={index % 2 === 1}
-						class:md:mt-0={index % 2 === 0}
+						class="group relative transition-all duration-500 ease-out hover:-translate-y-1 hover:scale-102"
+						style:animation-delay="{index * 100}ms"
 					>
 						<StakeholderCard bind:cards {...customer} {index} />
+						<div class="absolute inset-0 -z-10 rounded-xl bg-black/5 blur-xl transition-all duration-500 group-hover:bg-black/10 group-hover:blur-2xl"></div>
 					</div>
 				{/each}
 			</div>
