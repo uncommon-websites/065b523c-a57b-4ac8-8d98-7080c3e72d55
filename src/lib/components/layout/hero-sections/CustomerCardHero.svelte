@@ -111,14 +111,41 @@ It should ALWAYS have between 3 and 5 customers!
 		{/if}
 	</header>
 
-	<div
-		class="mt-4 grid flex-nowrap gap-(--card-gap) overflow-x-auto px-(--card-gap) whitespace-nowrap [--card-gap:calc(var(--radius)/2)] [--gap:--spacing(5)] max-lg:auto-cols-max max-lg:grid-flow-col md:whitespace-normal lg:grid-cols-[var(--cols)] lg:flex-wrap"
-		style:--cols="repeat({customers.length},1fr)"
-	>
-		{#each customers as customer, index}
-			<div class="h-full overflow-clip">
-				<StakeholderCard bind:cards {...customer} {index} />
+	<div class="relative mt-8 px-4">
+		<!-- Desktop: Overlapping card layout -->
+		<div class="hidden lg:block">
+			<div class="relative mx-auto max-w-4xl">
+				{#each customers as customer, index}
+					<div 
+						class="absolute transition-all duration-300 hover:z-10 hover:scale-105"
+						style:left="{index * 15}%"
+						style:top="{index % 2 === 0 ? '0' : '2rem'}"
+						style:z-index="{customers.length - index}"
+					>
+						<StakeholderCard bind:cards {...customer} {index} />
+					</div>
+				{/each}
+				<!-- Spacer to maintain height -->
+				<div class="invisible">
+					<StakeholderCard {...customers[0]} index={0} />
+				</div>
+				<div class="h-8"></div>
 			</div>
-		{/each}
+		</div>
+
+		<!-- Mobile/Tablet: Staggered grid layout -->
+		<div class="lg:hidden">
+			<div class="grid gap-4 md:grid-cols-2">
+				{#each customers as customer, index}
+					<div 
+						class="transition-all duration-300"
+						class:md:mt-8={index % 2 === 1}
+						class:md:mt-0={index % 2 === 0}
+					>
+						<StakeholderCard bind:cards {...customer} {index} />
+					</div>
+				{/each}
+			</div>
+		</div>
 	</div>
 </div>
