@@ -17,7 +17,7 @@
 
 <CustomerCardHero
 	centered={true}
-	title="Autonomous operations you can trust"
+	title="Cool operations you can trust"
 	subtitle="Trusted by mission-critical teams worldwide to sense, predict, and act in real time—across air, sea, and land."
 	customers={[
 		{
