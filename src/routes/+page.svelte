@@ -11,6 +11,7 @@
 	import ZigZagFeatures from "$lib/components/layout/ZigZagFeatures.svelte";
 	import ContactForm from "$lib/components/layout/ContactForm.svelte";
 	import Features from "$lib/components/layout/Features.svelte";
+	import FullScreenFeatures from "$lib/components/layout/FullScreenFeatures.svelte";
 	import FAQ from "$lib/components/layout/FAQ.svelte";
 </script>
 
@@ -103,6 +104,39 @@
 		{
 			title: "Multi-domain operations",
 			description: "Unified platform for air, sea, and land operations."
+		}
+	]}
+/>
+
+<FullScreenFeatures
+	title="How our platform works"
+	subtitle="Deep dive into the core capabilities that power autonomous operations"
+	features={[
+		{
+			title: "Data ingestion layer",
+			description: "Real-time collection from multiple sources",
+			content: "<p>Our platform continuously ingests data from weather systems, radar networks, traffic management systems, and operational databases. This creates a unified data foundation that updates in real-time, ensuring decisions are always based on the most current information available.</p><p>The system processes over 10,000 data points per second, creating a comprehensive operational picture that traditional systems simply cannot match.</p>",
+			imageSrc: "/generated/image-a-team-of-airport-ground-staff-engaged-i.webp",
+			imageAlt: "Data visualization and monitoring systems"
+		},
+		{
+			title: "AI decision engine",
+			description: "Advanced algorithms that think like experts",
+			content: "<p>At the heart of our platform lies an AI decision engine trained on thousands of operational scenarios. It doesn't just process data—it understands context, weighs risks, and makes decisions with the expertise of seasoned professionals.</p><p>The engine continuously learns from outcomes, improving its decision-making accuracy by 2-3% each month through reinforcement learning.</p>",
+			imageSrc: "/generated/image-a-bustling-harbor-scene-with-diverse-per.webp",
+			imageAlt: "AI processing and decision making visualization"
+		},
+		{
+			title: "Autonomous execution",
+			description: "Seamless integration with operational systems",
+			content: "<p>Once decisions are made, our platform seamlessly executes actions through existing operational systems. Whether it's rerouting aircraft, adjusting shipping schedules, or rebalancing energy loads, the execution happens automatically.</p><p>Built-in safety protocols ensure human oversight is maintained for critical decisions while automating routine operational tasks.</p>",
+			imageSrc: "/generated/image-a-busy-energy-control-room-filled-with-p.webp",
+			imageAlt: "Automated systems and control interfaces"
+		},
+		{
+			title: "Continuous optimization",
+			description: "Learning and improving with every operation",
+			content: "<p>Our platform doesn't just execute—it learns. Every decision, every outcome, and every operational scenario feeds back into the system, creating a continuously improving operational intelligence.</p><p>This creates compound improvements over time, with operational efficiency gains that accelerate as the system learns your specific operational patterns and challenges.</p>"
 		}
 	]}
 />
