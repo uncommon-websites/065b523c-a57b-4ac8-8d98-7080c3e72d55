@@ -12,6 +12,7 @@
 	import ContactForm from "$lib/components/layout/ContactForm.svelte";
 	import Features from "$lib/components/layout/Features.svelte";
 	import FAQ from "$lib/components/layout/FAQ.svelte";
+	import FullScreenScrollFeatures from "$lib/components/layout/FullScreenScrollFeatures.svelte";
 </script>
 
 <CustomerCardHero
@@ -104,6 +105,41 @@
 		{
 			title: "Multi-domain operations",
 			description: "Unified platform for air, sea, and land operations."
+		}
+	]}
+/>
+
+<FullScreenScrollFeatures
+	title="Advanced capabilities"
+	subtitle="Experience our platform's powerful features through immersive demonstrations"
+	features={[
+		{
+			title: "Real-time data processing",
+			description:
+				"Process millions of data points from weather, traffic, and operational systems in real-time. Our AI engines analyze patterns and anomalies to provide instant insights for critical decision-making across all operational domains.",
+			image:
+				"https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&h=900&fit=crop&crop=center"
+		},
+		{
+			title: "Autonomous decision engine",
+			description:
+				"AI digital humans make split-second operational decisions based on comprehensive data analysis. From flight routing to maritime navigation, our autonomous systems handle complex scenarios with precision and reliability.",
+			image:
+				"https://images.unsplash.com/photo-1484589065579-248aad0d8b13?q=80&w=2718&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+		},
+		{
+			title: "Predictive risk assessment",
+			description:
+				"Advanced machine learning models predict potential hazards and operational challenges before they occur. Our system continuously monitors conditions and provides early warnings to prevent incidents and optimize performance.",
+			image:
+				"https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&h=900&fit=crop&crop=center"
+		},
+		{
+			title: "Multi-domain coordination",
+			description:
+				"Seamlessly coordinate operations across air, sea, and land domains. Our unified platform ensures consistent decision-making and communication between different operational environments and teams.",
+			image:
+				"https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=1600&h=900&fit=crop&crop=center"
 		}
 	]}
 />
