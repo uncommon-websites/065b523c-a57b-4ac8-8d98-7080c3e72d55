@@ -7,6 +7,7 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
+	import ZigZagFeatures from "$lib/components/layout/ZigZagFeatures.svelte";
 </script>
 
 <CustomerCardHero
@@ -82,6 +83,36 @@
 	]}
 />
 
+<ZigZagFeatures
+	title="How we transform healthcare delivery"
+	subtitle="Our remote GP workforce integrates seamlessly with your existing systems to deliver clinical excellence at scale"
+	features={[
+		{
+			title: "Seamless integration with NHS systems",
+			description: "Our remote GPs work directly within your existing NHS-approved clinical systems. No workflow changes, no training required—just immediate access to qualified medical professionals when you need them most.",
+			imageSrc: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop&crop=center",
+			imageAlt: "Healthcare professional working on computer systems"
+		},
+		{
+			title: "24/7 coverage with global expertise",
+			description: "Leverage time zone differences to provide round-the-clock GP coverage. Our UK GMC-registered doctors, many former UK and Australian GPs, deliver consistent clinical quality regardless of the hour.",
+			imageSrc: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop&crop=center",
+			imageAlt: "Medical professionals working in different time zones"
+		},
+		{
+			title: "Flexible staffing that scales with demand",
+			description: "From single GP practices to large NHS providers, our contractor model adapts to your needs. Scale up during peak periods, maintain coverage during staff shortages, all while reducing overhead costs by up to 60%.",
+			imageSrc: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=800&h=600&fit=crop&crop=center",
+			imageAlt: "Healthcare team collaboration and planning"
+		},
+		{
+			title: "Clinical administration excellence",
+			description: "Our GPs handle complex clinical administration tasks—interpreting blood tests, document reviews, medical certifications—with the same expertise as your in-house team, but at a fraction of the cost.",
+			imageSrc: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800&h=600&fit=crop&crop=center",
+			imageAlt: "Medical documentation and clinical review process"
+		}
+	]}
+/>
 
 <UseCases
   title="Use Cases"
