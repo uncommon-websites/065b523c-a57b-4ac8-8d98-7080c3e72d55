@@ -11,6 +11,7 @@
 	import ZigZagFeatures from "$lib/components/layout/ZigZagFeatures.svelte";
 	import ContactForm from "$lib/components/layout/ContactForm.svelte";
 	import Features from "$lib/components/layout/Features.svelte";
+	import FAQ from "$lib/components/layout/FAQ.svelte";
 </script>
 
 <CustomerCardHero
@@ -215,6 +216,38 @@
 />
 
 <AboutTeaser />
+
+<FAQ
+	title="Frequently asked questions"
+	subtitle="Everything you need to know about our autonomous operations platform"
+	faqs={[
+		{
+			question: "How does the AI make autonomous decisions?",
+			answer: "Our AI digital humans process real-time data from multiple sources including weather, traffic, and operational systems. They use advanced machine learning models to analyze patterns, predict outcomes, and make split-second decisions based on safety protocols and operational efficiency parameters."
+		},
+		{
+			question: "What industries can benefit from GeoSpatios?",
+			answer: "We serve mission-critical operations across aviation (airlines, airports, air traffic control), maritime (shipping, ports), ground logistics, space operations, energy grid management, and insurance. Any industry requiring real-time operational decisions can benefit from our platform."
+		},
+		{
+			question: "How quickly can we see results after implementation?",
+			answer: "Most clients see immediate improvements in decision speed and accuracy. Within the first month, typical results include 15% reduction in delays, 4.5% reduction in fuel costs, and 20% reduction in hazard encounters. Full optimization usually occurs within 90 days."
+		},
+		{
+			question: "Is the platform secure for mission-critical operations?",
+			answer: "Absolutely. GeoSpatios is built with enterprise-grade security and compliance standards. We work with government agencies and critical infrastructure operators, ensuring our platform meets the highest security requirements for sensitive operational data."
+		},
+		{
+			question: "How does GeoSpatios integrate with existing systems?",
+			answer: "Our platform is designed for seamless integration with existing operational systems. We provide APIs and SDKs that connect with your current infrastructure, requiring minimal workflow changes while maximizing the value of your existing data investments."
+		},
+		{
+			question: "What kind of support do you provide during implementation?",
+			answer: "We provide comprehensive support including dedicated implementation specialists, training for your team, 24/7 technical support, and ongoing optimization consultations. Our goal is to ensure smooth adoption and maximum value realization from day one."
+		}
+	]}
+/>
+
 <CallToAction
 	title="Operations don’t have to be chaos"
 	subtitle="The edge in mission-critical decisions, every time"
