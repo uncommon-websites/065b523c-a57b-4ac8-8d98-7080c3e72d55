@@ -9,6 +9,7 @@
 	import LogoGrid from "$lib/components/layout/LogoGrid.svelte";
 	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 	import ZigZagFeatures from "$lib/components/layout/ZigZagFeatures.svelte";
+	import BentoFeatures from "$lib/components/layout/BentoFeatures.svelte";
 </script>
 
 <CustomerCardHero
@@ -71,6 +72,43 @@
 <Summary
 	title="What we do"
 	text="GeoSpatios builds AI-powered digital humans that turn real-time data into autonomous decisions for mission-critical operations. Our platform helps frontline teams in air, sea, and land operate faster, safer, and with more certainty."
+/>
+
+<BentoFeatures
+	title="Platform capabilities"
+	subtitle="AI-powered features that transform how mission-critical operations work"
+	features={[
+		{
+			title: "Real-time data fusion",
+			description: "Integrate weather, satellite, radar, and sensor data into unified operational intelligence for instant decision making.",
+			size: "large"
+		},
+		{
+			title: "Predictive analytics",
+			description: "Forecast operational risks and optimize routes before issues arise.",
+			size: "medium"
+		},
+		{
+			title: "Autonomous decision engine",
+			description: "AI agents that make split-second operational calls with beyond-human accuracy.",
+			size: "medium"
+		},
+		{
+			title: "Multi-domain operations",
+			description: "Unified platform for air, sea, and land operations with seamless coordination.",
+			size: "large"
+		},
+		{
+			title: "Risk assessment",
+			description: "Continuous hazard monitoring and automated safety protocols.",
+			size: "small"
+		},
+		{
+			title: "Performance optimization",
+			description: "Reduce fuel costs, delays, and operational overhead through intelligent automation.",
+			size: "medium"
+		}
+	]}
 />
 
 <FullScreenTestimonials
