@@ -10,6 +10,7 @@
 	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 	import ZigZagFeatures from "$lib/components/layout/ZigZagFeatures.svelte";
 	import ContactForm from "$lib/components/layout/ContactForm.svelte";
+	import Features from "$lib/components/layout/Features.svelte";
 </script>
 
 <CustomerCardHero
@@ -72,6 +73,37 @@
 <Summary
 	title="What we do"
 	text="GeoSpatios builds AI-powered digital humans that turn real-time data into autonomous decisions for mission-critical operations. Our platform helps frontline teams in air, sea, and land operate faster, safer, and with more certainty."
+/>
+
+<Features
+	title="Platform capabilities"
+	subtitle="AI-powered features that transform how mission-critical operations work"
+	features={[
+		{
+			title: "Real-time data fusion",
+			description: "Combine weather, traffic, and operational data into a single decision-making engine."
+		},
+		{
+			title: "Autonomous routing",
+			description: "AI agents optimize paths and routes in real-time based on changing conditions."
+		},
+		{
+			title: "Predictive analytics",
+			description: "Forecast operational challenges before they impact your mission."
+		},
+		{
+			title: "Risk assessment",
+			description: "Continuous hazard monitoring and automated risk scoring."
+		},
+		{
+			title: "Decision automation",
+			description: "AI digital humans make split-second operational decisions."
+		},
+		{
+			title: "Multi-domain operations",
+			description: "Unified platform for air, sea, and land operations."
+		}
+	]}
 />
 
 <FullScreenTestimonials
