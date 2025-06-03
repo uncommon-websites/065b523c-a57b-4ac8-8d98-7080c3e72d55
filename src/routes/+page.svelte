@@ -11,7 +11,6 @@
 	import ZigZagFeatures from "$lib/components/layout/ZigZagFeatures.svelte";
 	import ContactForm from "$lib/components/layout/ContactForm.svelte";
 	import Features from "$lib/components/layout/Features.svelte";
-	import FullScreenFeatures from "$lib/components/layout/FullScreenFeatures.svelte";
 	import FAQ from "$lib/components/layout/FAQ.svelte";
 </script>
 
@@ -83,7 +82,8 @@
 	features={[
 		{
 			title: "Real-time data fusion",
-			description: "Combine weather, traffic, and operational data into a single decision-making engine."
+			description:
+				"Combine weather, traffic, and operational data into a single decision-making engine."
 		},
 		{
 			title: "Autonomous routing",
@@ -104,39 +104,6 @@
 		{
 			title: "Multi-domain operations",
 			description: "Unified platform for air, sea, and land operations."
-		}
-	]}
-/>
-
-<FullScreenFeatures
-	title="How our platform works"
-	subtitle="Deep dive into the core capabilities that power autonomous operations"
-	features={[
-		{
-			title: "Data ingestion layer",
-			description: "Real-time collection from multiple sources",
-			content: "<p>Our platform continuously ingests data from weather systems, radar networks, traffic management systems, and operational databases. This creates a unified data foundation that updates in real-time, ensuring decisions are always based on the most current information available.</p><p>The system processes over 10,000 data points per second, creating a comprehensive operational picture that traditional systems simply cannot match.</p>",
-			imageSrc: "/generated/image-a-team-of-airport-ground-staff-engaged-i.webp",
-			imageAlt: "Data visualization and monitoring systems"
-		},
-		{
-			title: "AI decision engine",
-			description: "Advanced algorithms that think like experts",
-			content: "<p>At the heart of our platform lies an AI decision engine trained on thousands of operational scenarios. It doesn't just process data—it understands context, weighs risks, and makes decisions with the expertise of seasoned professionals.</p><p>The engine continuously learns from outcomes, improving its decision-making accuracy by 2-3% each month through reinforcement learning.</p>",
-			imageSrc: "/generated/image-a-bustling-harbor-scene-with-diverse-per.webp",
-			imageAlt: "AI processing and decision making visualization"
-		},
-		{
-			title: "Autonomous execution",
-			description: "Seamless integration with operational systems",
-			content: "<p>Once decisions are made, our platform seamlessly executes actions through existing operational systems. Whether it's rerouting aircraft, adjusting shipping schedules, or rebalancing energy loads, the execution happens automatically.</p><p>Built-in safety protocols ensure human oversight is maintained for critical decisions while automating routine operational tasks.</p>",
-			imageSrc: "/generated/image-a-busy-energy-control-room-filled-with-p.webp",
-			imageAlt: "Automated systems and control interfaces"
-		},
-		{
-			title: "Continuous optimization",
-			description: "Learning and improving with every operation",
-			content: "<p>Our platform doesn't just execute—it learns. Every decision, every outcome, and every operational scenario feeds back into the system, creating a continuously improving operational intelligence.</p><p>This creates compound improvements over time, with operational efficiency gains that accelerate as the system learns your specific operational patterns and challenges.</p>"
 		}
 	]}
 />
@@ -257,27 +224,33 @@
 	faqs={[
 		{
 			question: "How does the AI make autonomous decisions?",
-			answer: "Our AI digital humans process real-time data from multiple sources including weather, traffic, and operational systems. They use advanced machine learning models to analyze patterns, predict outcomes, and make split-second decisions based on safety protocols and operational efficiency parameters."
+			answer:
+				"Our AI digital humans process real-time data from multiple sources including weather, traffic, and operational systems. They use advanced machine learning models to analyze patterns, predict outcomes, and make split-second decisions based on safety protocols and operational efficiency parameters."
 		},
 		{
 			question: "What industries can benefit from GeoSpatios?",
-			answer: "We serve mission-critical operations across aviation (airlines, airports, air traffic control), maritime (shipping, ports), ground logistics, space operations, energy grid management, and insurance. Any industry requiring real-time operational decisions can benefit from our platform."
+			answer:
+				"We serve mission-critical operations across aviation (airlines, airports, air traffic control), maritime (shipping, ports), ground logistics, space operations, energy grid management, and insurance. Any industry requiring real-time operational decisions can benefit from our platform."
 		},
 		{
 			question: "How quickly can we see results after implementation?",
-			answer: "Most clients see immediate improvements in decision speed and accuracy. Within the first month, typical results include 15% reduction in delays, 4.5% reduction in fuel costs, and 20% reduction in hazard encounters. Full optimization usually occurs within 90 days."
+			answer:
+				"Most clients see immediate improvements in decision speed and accuracy. Within the first month, typical results include 15% reduction in delays, 4.5% reduction in fuel costs, and 20% reduction in hazard encounters. Full optimization usually occurs within 90 days."
 		},
 		{
 			question: "Is the platform secure for mission-critical operations?",
-			answer: "Absolutely. GeoSpatios is built with enterprise-grade security and compliance standards. We work with government agencies and critical infrastructure operators, ensuring our platform meets the highest security requirements for sensitive operational data."
+			answer:
+				"Absolutely. GeoSpatios is built with enterprise-grade security and compliance standards. We work with government agencies and critical infrastructure operators, ensuring our platform meets the highest security requirements for sensitive operational data."
 		},
 		{
 			question: "How does GeoSpatios integrate with existing systems?",
-			answer: "Our platform is designed for seamless integration with existing operational systems. We provide APIs and SDKs that connect with your current infrastructure, requiring minimal workflow changes while maximizing the value of your existing data investments."
+			answer:
+				"Our platform is designed for seamless integration with existing operational systems. We provide APIs and SDKs that connect with your current infrastructure, requiring minimal workflow changes while maximizing the value of your existing data investments."
 		},
 		{
 			question: "What kind of support do you provide during implementation?",
-			answer: "We provide comprehensive support including dedicated implementation specialists, training for your team, 24/7 technical support, and ongoing optimization consultations. Our goal is to ensure smooth adoption and maximum value realization from day one."
+			answer:
+				"We provide comprehensive support including dedicated implementation specialists, training for your team, 24/7 technical support, and ongoing optimization consultations. Our goal is to ensure smooth adoption and maximum value realization from day one."
 		}
 	]}
 />
