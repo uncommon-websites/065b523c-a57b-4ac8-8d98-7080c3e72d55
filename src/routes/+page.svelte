@@ -10,6 +10,7 @@
 	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 	import ZigZagFeatures from "$lib/components/layout/ZigZagFeatures.svelte";
 	import BentoFeatures from "$lib/components/layout/BentoFeatures.svelte";
+	import ContactForm from "$lib/components/layout/ContactForm.svelte";
 </script>
 
 <CustomerCardHero
@@ -215,3 +216,5 @@
     variant: 'primary'
   }]}
 />
+
+<ContactForm />
