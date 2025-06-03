@@ -2,7 +2,7 @@
 	// Components
 	import UseCases from "$lib/components/layout/UseCases.svelte";
 	import Summary from "$lib/components/layout/Summary.svelte";
-	import Testimonials from "$lib/components/layout/Testimonials.svelte";
+	import FullScreenTestimonials from "$lib/components/layout/FullScreenTestimonials.svelte";
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
@@ -57,28 +57,28 @@
 	text="GeoSpatios builds AI-powered digital humans that turn real-time data into autonomous decisions for mission-critical operations. Our platform helps frontline teams in air, sea, and land operate faster, safer, and with more certainty."
 />
 
-<Testimonials
+<FullScreenTestimonials
 	testimonials={[
 		{
-			name: "Svenja Mayer",
-			position: "Director of Airport Operations",
-			company: "Eurolift Airways",
+			name: "Dr. Sarah Mitchell",
+			position: "Practice Manager",
+			company: "Riverside Medical Centre",
 			quote: "In our airport ops center, GeoSpatios AI simplified vectoring decisions and trimmed our average ground turnaround by 18 minutes per flight. That’s 7,500+ hours saved per month across the fleet.",
-			image: "/generated/image-a-female-airport-operations-leader-in-a-.webp"
+			image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1200&h=1600&fit=crop&crop=center"
 		},
 		{
-			name: "Diego Morales",
-			position: "Port Operations Director",
-			company: "Terminal Pacifico Sur",
+			name: "James Thompson",
+			position: "Clinical Director",
+			company: "North London Health Network",
 			quote: "Since implementing GeoSpatios in our seaport authority’s control system, real-time hazard incidents have dropped by 22%. Risk alerts are faster and more context-aware than anything we had before.",
-			image: "/generated/image-a-male-port-director-in-a-seaport-comman.webp"
+			image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=1200&h=1600&fit=crop&crop=center"
 		},
 		{
-			name: "Anusha Mehra",
-			position: "Senior Risk Officer",
-			company: "Bharat Energy Network",
+			name: "Dr. Priya Patel",
+			position: "GP Partner",
+			company: "Westfield Surgery",
 			quote: "At our energy grid operations center, GeoSpatios enabled smarter load balancing and failure predictions. We’re now saving over $190,000 in monthly operational overhead.",
-			image: "/generated/image-a-female-senior-risk-officer-in-an-energ.webp"
+			image: "https://plus.unsplash.com/premium_photo-1664475477169-46b784084d4e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvc3BpdGFsfGVufDB8fDB8fHww"
 		}
 	]}
 />
@@ -90,7 +90,7 @@
 		{
 			title: "Seamless integration with NHS systems",
 			description: "Our remote GPs work directly within your existing NHS-approved clinical systems. No workflow changes, no training required—just immediate access to qualified medical professionals when you need them most.",
-			imageSrc: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop&crop=center",
+			imageSrc: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=3428&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 			imageAlt: "Healthcare professional working on computer systems"
 		},
 		{
