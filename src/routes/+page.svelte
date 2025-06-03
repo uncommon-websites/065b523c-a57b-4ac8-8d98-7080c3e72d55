@@ -6,6 +6,7 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
+	import LogoGrid from "$lib/components/layout/LogoGrid.svelte";
 	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 	import ZigZagFeatures from "$lib/components/layout/ZigZagFeatures.svelte";
 </script>
@@ -49,6 +50,21 @@
 		'https://logo.clearbit.com/maersk.com',
 		'https://logo.clearbit.com/united.com',
 		'https://logo.clearbit.com/cosco.com'
+	]}
+/>
+
+<LogoGrid
+	title="Partners across critical industries"
+	logoUrls={[
+		'https://logo.clearbit.com/boeing.com',
+		'https://logo.clearbit.com/airbus.com',
+		'https://logo.clearbit.com/ge.com',
+		'https://logo.clearbit.com/rolls-royce.com',
+		'https://logo.clearbit.com/lockheedmartin.com',
+		'https://logo.clearbit.com/raytheon.com',
+		'https://logo.clearbit.com/honeywell.com',
+		'https://logo.clearbit.com/thalesgroup.com',
+		'https://logo.clearbit.com/safran-group.com'
 	]}
 />
 
