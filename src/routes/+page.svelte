@@ -2,7 +2,7 @@
 	// Components
 	import UseCases from "$lib/components/layout/UseCases.svelte";
 	import Summary from "$lib/components/layout/Summary.svelte";
-	import Features from "$lib/components/layout/Features.svelte";
+	import ZigZagFeatures from "$lib/components/layout/ZigZagFeatures.svelte";
 	import Testimonials from "$lib/components/layout/Testimonials.svelte";
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
