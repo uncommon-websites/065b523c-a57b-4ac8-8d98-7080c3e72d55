@@ -41,7 +41,7 @@
 			</div>
 		{/if}
 		
-		<div class="grid grid-cols-3 gap-6 md:gap-8 lg:gap-10 max-w-4xl mx-auto">
+		<div class="grid grid-cols-3 gap-4 md:gap-6 lg:gap-8 max-w-3xl mx-auto">
 			{#each logoUrls.slice(0, 9) as logoUrl, index}
 				<div 
 					class="bg-card border border-border rounded-lg p-6 md:p-8 flex items-center justify-center aspect-square hover:bg-card-hover transition-colors duration-200"
